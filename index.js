@@ -14,4 +14,9 @@ app.get('/listImages',function(req,res){
 res.send("check Image details");
 });
 
+//other routes here
+app.get('*',function(req,res){
+res.send("Sorry, this is an invalid Url");
+})
+
 app.listen(3030);
