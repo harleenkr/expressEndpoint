@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var Docker = require('dockerode');
+var docker = new Docker({host: 'http://35.193.23.248', port: 2375})
 
 app.get('/',function(req,res){
 res.send("initally check GET details");
