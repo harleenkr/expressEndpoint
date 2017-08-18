@@ -1,18 +1,18 @@
 var express = require('express');
 var app = express();
 const controller = require('./controllers')
-var Router= require('router')
-var router = Router()
+var router = express.Router()
+app.use('/',router);
 
-app.get('/', function(req,res){
+router.get('/', function(req,res){
 res.send("check initial GET details");
 });
 
-app.get('/listContainers',controller.containers);
-app.get('/listImages',controller.images);
+router.get('/listContainers',controller.containers);
+router.get('/listImages',controller.images);
 
 //other invalid routes here
-app.get('*',function(req,res){
+router.get('*',function(req,res){
 res.send("Sorry, this is an invalid Url");
 });
 
