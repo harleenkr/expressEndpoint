@@ -3,6 +3,7 @@ var app = express();
 const controller = require('./controllers')
 var router = express.Router()
 app.use('/',router);
+var r = require('rethinkdb');
 
 router.get('/', function(req,res){
 res.send("check initial GET details");
