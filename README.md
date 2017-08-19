@@ -17,6 +17,12 @@ index.js
 
 controllers.js
 
+rethink.js
+
+config/database.js
+
+env.js
+
 package.json
 
 README.MD
