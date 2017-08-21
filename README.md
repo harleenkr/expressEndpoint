@@ -19,9 +19,7 @@ controllers.js
 
 rethink.js
 
-config/database.js
-
-env.js
+config/config.js
 
 package.json
 
