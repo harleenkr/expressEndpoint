@@ -17,10 +17,6 @@ index.js
 
 controllers.js
 
-rethink.js
-
-config/config.js
-
 package.json
 
 README.MD
